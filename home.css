@@ -1,0 +1,213 @@
+body {
+  background-color: #ede8dc;
+  font-family: "Coming Soon", cursive;
+}
+.container {
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sidebar {
+  width: 20px;
+  background-color: #a5b68d;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  overflow: hidden;
+  align-items: center;
+  align-content: center;
+}
+
+.horizontal-line-up {
+  position: absolute;
+  top: 10%;
+  border: 5px solid #e7cccc;
+  width: 200px;
+}
+
+.horizontal-line-down {
+  position: absolute;
+  top: 90%;
+  border: 5px solid #e7cccc;
+  width: 200px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  color: #ede8dc;
+  font-family: "Coming Soon", cursive;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.sidebar a:hover {
+  color: #5C7650;
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+.home-journal {
+  height: 95vh;
+}
+
+.home-journal h1 {
+  padding-top: 100px;
+}
+
+.home-journal h1 {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  text-transform: capitalize;
+  color: #5C7650;
+}
+
+.home-journal p {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  text-transform: capitalize;
+  color: #5C7650;
+}
+
+.content {
+  margin-left: 250px;
+}
+
+
+.entry {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  margin-inline: auto;
+  height: 95vh;
+}
+
+.entry textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 30%;
+  resize: none;
+  background-color: #faf7f1;
+  text-align: center;
+  border: 2px solid #e7cccc;
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Coming Soon", cursive;
+  color: #5C7650;
+  font-size: 20px;
+}
+
+.entry h1 {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  text-transform: capitalize;
+  color: #5C7650;
+}
+
+.entry button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #faf7f1;
+  border: 2px solid #e7cccc;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Coming Soon", cursive;
+  font-weight: bolder;
+  color: #5C7650;
+  transition: 0.4s;
+}
+
+.entry button:hover {
+  background-color: #e7cccc;
+  box-shadow: 2px 2px 10px 2px #c7c1b1;
+}
+
+
+.archive h1 {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  text-transform: capitalize;
+  color: #5C7650;
+  margin-top: 50px;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e7cccc;
+  border-radius: 25px;
+  background-color: #faf7f1;
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+}
+
+.card p {
+  padding-left: 25px;
+  padding-left: 25px;
+}
+
+::-webkit-scrollbar {
+  background:none;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
