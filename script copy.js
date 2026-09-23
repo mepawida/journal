@@ -10,20 +10,20 @@ document.addEventListener("click", (e) => {
 });
 
 const urlRoutes = {
-  "/": {
-    template: "/templates/index.html",
+  "/journal/": {
+    template: "/journal/templates/index.html",
     title: "",
     description: "",
   },
 
-  "/archive": {
-    template: "/templates/archive.html",
+  "/journal/archive": {
+    template: "/journal/templates/archive.html",
     title: "",
     description: "",
   },
 
-  "/entry": {
-    template: "/templates/entry.html",
+  "/journal/entry": {
+    template: "/journal/templates/entry.html",
     title: "",
     description: "",
   },
@@ -44,10 +44,10 @@ const urlLocationHandler = async () => {
   let location = window.location.pathname;
 
   if (location.length === 0) {
-    location = "/";
+    location = "/journal/";
   }
 
-  const route = urlRoutes[location] || urlRoutes["/"];
+  const route = urlRoutes[location] || urlRoutes["/journal/"];
 
   const html = await fetch(route.template)
     .then((response) => response.text());
