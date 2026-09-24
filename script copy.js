@@ -66,16 +66,8 @@ window.onpopstate = urlLocationHandler;
 window.route = urlRoute;
 
 
-// Start the app
 urlLocationHandler();
 
-
-console.log("🔥 JAVASCRIPT IS RUNNING 🔥");
-
-
-// ------------------------------------
-// SUBMIT
-// ------------------------------------
 
 document.addEventListener("click", (event) => {
   if (event.target.id === "submit-btn") {
@@ -113,14 +105,9 @@ function submitForm() {
   createCard(textarea);
 
 
-  // Clear textarea
   textareaInput.value = "";
 }
 
-
-// ------------------------------------
-// LOAD SAVED THOUGHTS
-// ------------------------------------
 
 function loadThoughts() {
   const cards = document.querySelector(".cards");
@@ -128,7 +115,7 @@ function loadThoughts() {
   console.log("Loading thoughts...");
   console.log("Cards container:", cards);
 
-  // We're not on the archive page
+
   if (!cards) {
     return;
   }
@@ -146,9 +133,6 @@ function loadThoughts() {
 }
 
 
-// ------------------------------------
-// CREATE CARD
-// ------------------------------------
 
 function createCard(thought) {
   const cards = document.querySelector(".cards");
